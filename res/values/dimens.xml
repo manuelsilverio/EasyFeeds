@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    
+    <!-- text sizes -->
+    <dimen name="text_size_added_button_text">5sp</dimen>
+    <dimen name="text_size_added_button_sign">14sp</dimen>
+    
+    <dimen name="text_size_entry_title">15sp</dimen>
+    <dimen name="text_size_entry_content">11sp</dimen>
+    <dimen name="text_size_entry_date">10sp</dimen>
+    
+    <dimen name="text_size_button_left_nav_child_remove">5sp</dimen>
+    
+    
+    <!-- margins & paddings -->
+    <dimen name="margin_expandable_topic">6dp</dimen>
+    <dimen name="margin_expandable_sub_topic">6dp</dimen>
+    
+    <dimen name="margin_main_list_topBot">1dp</dimen>
+    <dimen name="margin_main_list_left">5dp</dimen>
+    <dimen name="margin_main_list_right">10dp</dimen>
+    
+    <dimen name="padding_mainscreen_list_view_top">1dp</dimen>
+    <dimen name="padding_mainscreen_list_view_left">10dp</dimen>
+    
+    <dimen name="padding_sub_topic_topBot">20dp</dimen>
+
+    <!-- elements dimensions -->
+    <dimen name="dim_image_view_main_list">95dp</dimen>
+    
+    <dimen name="dim_image_sub_topic_list">40dp</dimen>
+    <dimen name="dim_button_width_sub_topic_list">8dp</dimen>
+</resources>

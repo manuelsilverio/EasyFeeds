@@ -1,0 +1,129 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <android.support.v4.view.ViewPager
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/pager_main_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/father_nav_right"
+        android:layout_width="290dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_light"
+        android:layout_gravity="end"
+        android:orientation="vertical" >
+
+        <RelativeLayout 
+             	android:layout_width="match_parent"
+	            android:layout_height="60dp"
+	            android:background="#669900">
+	        <Button
+	            android:id="@+id/nav_right_topic_button"
+	            android:layout_width="match_parent"
+	            android:layout_height="35dp"
+	            android:layout_marginLeft="30dp"
+	            android:layout_marginRight="30dp"
+	            android:layout_marginTop="15dp"
+	            android:layout_marginBottom="10dp"
+	            android:background="#449900"
+	            android:text="@string/nav_right_choose_topic"
+	            android:textColor="@android:color/white"
+	            android:textSize="20sp" />
+        </RelativeLayout>
+        <ListView
+            android:id="@+id/nav_list_right"
+            android:layout_width="290dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/background_light"
+            android:choiceMode="singleChoice"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="1dp" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/father_nav_left"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@android:color/background_light"
+        android:clickable="false"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/navLeftTitleTextview"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#669900"
+            android:gravity="center"
+            android:text="@string/nav_left_title"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <ExpandableListView
+            android:id="@+id/nav_list_left"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/background_light"
+            android:choiceMode="singleChoice"
+            android:descendantFocusability="blocksDescendants"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="1dp"
+            android:groupIndicator="@null" >
+        </ExpandableListView>
+
+        <Button
+            android:id="@+id/nav_left_add_button"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="55dp"
+            android:background="#99cc00"
+            android:text="@string/nav_left_add_content"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/nav_left_remove_button"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:background="#cc4444"
+            android:text="@string/nav_left_delete_content"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/empty_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
+
+    <RelativeLayout
+        android:id="@+id/sub_main_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>

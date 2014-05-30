@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sub_topic_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp" 
+    android:paddingTop="@dimen/padding_sub_topic_topBot"
+    android:paddingBottom="@dimen/padding_sub_topic_topBot"
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:id="@+id/ImageContainer"
+        android:layout_width="@dimen/dim_image_sub_topic_list"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp">
+
+        <ImageView
+            android:id="@+id/subTopicImageView"
+            android:layout_width="@dimen/dim_image_sub_topic_list"
+            android:layout_height="@dimen/dim_image_sub_topic_list"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_launcher" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/superContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        
+        android:orientation="horizontal"
+        android:layout_toRightOf="@+id/ImageContainer" >
+
+        <LinearLayout
+            android:id="@+id/subTopicTextContainer"
+            android:layout_height="wrap_content"
+            android:layout_width="16dp"
+            android:layout_weight="5"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/SubTopicTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/SubTopicDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+       <Button
+            android:id="@+id/sub_topic_add_button"
+            android:layout_height="match_parent"
+            android:layout_width="@dimen/dim_button_width_sub_topic_list"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:text="+"
+            android:paddingRight="10dp"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/text_size_added_button_sign" /> 
+
+    </LinearLayout>
+
+</RelativeLayout>

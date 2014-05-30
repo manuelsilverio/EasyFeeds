@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:paddingTop="@dimen/padding_mainscreen_list_view_top"
+    android:paddingBottom="@dimen/padding_mainscreen_list_view_top"
+    android:paddingLeft="@dimen/padding_mainscreen_list_view_left">
+
+    <RelativeLayout
+        android:id="@+id/main_screen_imageview_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" >
+
+        <ImageView
+            android:id="@+id/image_mainScreen"
+            android:layout_width="@dimen/dim_image_view_main_list"
+            android:layout_height="@dimen/dim_image_view_main_list"
+            android:layout_centerInParent="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/no_image_icon" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/main_screen_imageview_container"
+        android:orientation="vertical" 
+        android:layout_marginTop="@dimen/margin_main_list_topBot"
+        android:layout_marginBottom="@dimen/margin_main_list_topBot"
+        android:layout_marginLeft="@dimen/margin_main_list_left"
+        android:layout_marginRight="@dimen/margin_main_list_right">
+
+        <TextView
+            android:id="@+id/title_mainScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            android:text="Title"
+            android:textSize="@dimen/text_size_entry_title"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/content_mainScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="4"
+            android:text="Content"
+            android:textSize="@dimen/text_size_entry_content" />
+
+        <TextView
+            android:id="@+id/date_mainScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:text="Date"
+            android:textSize="@dimen/text_size_entry_date" 
+            android:textColor="@android:color/darker_gray"
+            android:textStyle="italic"/>
+    </LinearLayout>
+
+</RelativeLayout>

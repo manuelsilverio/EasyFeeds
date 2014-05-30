@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Easy Feeds</string>
+    <string name="action_settings">Settings</string>
+    <string name="error_title">Oops sorry!</string>
+    <string name="error_message">Try again</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>  
+    <string name="chose_favorite">Choose your favorite</string>
+   
+    
+    <!-- Buttons -->
+    <string name="nav_left_add_content">Add Content</string>
+    <string name="nav_left_delete_content">Remove</string>
+    <string name="nav_right_choose_topic">Go Back</string>
+    <string name="text_added_button_text">Added</string>
+    <string name="text_added_button_sign">+</string>
+    
+    
+    <!-- Textviews -->
+    <string name="page">Page</string>
+    <string name="nav_left_title">Favorites</string>
+    <string name="no_item_to_display">No item to display</string>
+    
+    
+    <!-- ARRAYS -->
+    
+	<string-array name="techSubTopicUrl">
+	    <item >http://www.theverge.com/tech/rss/index.xml</item>
+	    <item >http://www.engadget.com/rss.xml</item>
+	    <item >http://www.lifehack.org/feed</item>
+	    <item >http://feeds.gawker.com/gizmodo/full</item>
+	    <item >https://www.yahoo.com/tech/rss</item>
+	    <item >http://www.wired.com/feed/</item>
+	    <item >http://feeds.mashable.com/Mashable</item>
+	    <item >http://feeds.gawker.com/lifehacker/full</item>
+	    <item >http://feeds2.feedburner.com/thenextweb</item>
+	    <item >http://feeds.arstechnica.com/arstechnica/index/</item>
+	    <item >http://readwrite.com/main/feed/articles.xml</item>
+	    </string-array>
+	    
+	<string-array name="months">
+        <item>Item 1</item>
+        <item>Item 2</item>
+        <item>Item 3</item>
+        <item>Item 4</item>
+        <item>Item 5</item>
+        <item>Item 6</item>
+    </string-array>
+    
+
+</resources>
