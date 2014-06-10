@@ -13,7 +13,8 @@
         android:layout_height="48dp"
         android:layout_marginLeft="42dp"
         android:gravity="center_vertical"
-        android:text="text"
+        android:text=""
+        android:lines="1"
         android:textColor="@android:color/darker_gray"
         android:textSize="14sp" />
 
